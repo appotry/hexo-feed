@@ -3,8 +3,11 @@
 > Supports hexo 6!
 
 > Just For Test Npm Publish
+>
 > 上游一直不支持hexo 6，PR也没反应，留言也没回复，就先自建一个使用了
+>
 > 上游如果修复问题了，就不再更新
+
 ## hexo-feed  ![Publish on NPM](https://github.com/sergeyzwezdin/hexo-feed/workflows/Publish%20on%20NPM/badge.svg?branch=master) ![](https://img.shields.io/npm/v/hexo-feed)
 `hexo-feed` is a plugin for Hexo static site generator that builds RSS, Atom and JSON Feed for your content.
 
