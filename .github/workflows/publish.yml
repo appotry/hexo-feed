@@ -2,7 +2,7 @@ name: Publish on NPM
 on:
   push:
     branches: 
-      - master
+      - develop
 
 jobs:
   build:
@@ -31,7 +31,7 @@ jobs:
     - name: Publish package to NPM
       if: steps.check.outputs.changed == 'true'
       run: |
-        npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
+        npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
         npm publish
       env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
